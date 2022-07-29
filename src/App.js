@@ -118,6 +118,26 @@ export default class App extends Component {
       document.body.style.backgroundColor = "#ffea00"
     } else if(this.state.random == 20){
       document.body.style.backgroundColor = "#0ead69"
+    } else if(this.state.random == 21){
+      document.body.style.backgroundColor = "#f15bb5"
+    } else if(this.state.random == 22){
+      document.body.style.backgroundColor = "#9e0059"
+    } else if(this.state.random == 23){
+      document.body.style.backgroundColor = "#4cc9f0"
+    } else if(this.state.random == 24){
+      document.body.style.backgroundColor = "#540d6e"
+    } else if(this.state.random == 25){
+      document.body.style.backgroundColor = "#80ed99"
+    } else if(this.state.random == 26){
+      document.body.style.backgroundColor = "#43bccd"
+    } else if(this.state.random == 27){
+      document.body.style.backgroundColor = "#fbff12"
+    } else if(this.state.random == 28){
+      document.body.style.backgroundColor = "#70e000"
+    } else if(this.state.random == 29){
+      document.body.style.backgroundColor = "#00963c"
+    } else if(this.state.random == 30){
+      document.body.style.backgroundColor = "#f2542d"
     } 
     return (
       <Caixa>
@@ -209,7 +229,7 @@ export default class App extends Component {
                   sinal2: "",
                   sinaldeigual: "",
                   result: "",
-                  random: Math.floor(Math.random()*21)
+                  random: Math.floor(Math.random()*31)
                   
                 })
               }}>CE</Numbers>
@@ -373,121 +393,121 @@ export default class App extends Component {
                   this.setState({
                     result: Number(this.state.primeiroValor) + Number(this.state.segundoValor),
                     sinaldeigual: '=',
-                    random:  Math.floor(Math.random()*21)
+                    random:  Math.floor(Math.random()*31)
                   })
                 } else if (this.state.sinal == "+" && this.state.sinal2 == "+") {
                   this.setState({
                     result: Number(this.state.primeiroValor) + Number(this.state.segundoValor) + Number(this.state.terceiroValor),
                     sinaldeigual: '=',
-                    random:  Math.floor(Math.random()*21)
+                    random:  Math.floor(Math.random()*31)
                   })
                 } else if (this.state.sinal == "+" && this.state.sinal2 == "-") {
                   this.setState({
                     result: Number(this.state.primeiroValor) + Number(this.state.segundoValor) - Number(this.state.terceiroValor),
                     sinaldeigual: '=',
-                    random:  Math.floor(Math.random()*21)
+                    random:  Math.floor(Math.random()*31)
                   })
                 } else if (this.state.sinal == "+" && this.state.sinal2 == "x") {
                   this.setState({
                     result: Number(this.state.primeiroValor) + Number(this.state.segundoValor) * Number(this.state.terceiroValor),
                     sinaldeigual: '=',
-                    random:  Math.floor(Math.random()*21)
+                    random:  Math.floor(Math.random()*31)
                   })
                 } else if (this.state.sinal == "+" && this.state.sinal2 == "÷") {
                   this.setState({
                     result: Number(this.state.primeiroValor) + Number(this.state.segundoValor) / Number(this.state.terceiroValor),
                     sinaldeigual: '=',
-                    random:  Math.floor(Math.random()*21)
+                    random:  Math.floor(Math.random()*31)
                   })
                 } else if (this.state.sinal == "-" && this.state.sinal2 == "") {
                   this.setState({
                     result: Number(this.state.primeiroValor) - Number(this.state.segundoValor),
                     sinaldeigual: '=',
-                    random:  Math.floor(Math.random()*21)
+                    random:  Math.floor(Math.random()*31)
                   })
                 } else if (this.state.sinal == "-" && this.state.sinal2 == "-") {
                   this.setState({
                     result: Number(this.state.primeiroValor) - Number(this.state.segundoValor) - Number(this.state.terceiroValor),
                     sinaldeigual: '=',
-                    random:  Math.floor(Math.random()*21)
+                    random:  Math.floor(Math.random()*31)
                   })
                 } else if (this.state.sinal == "-" && this.state.sinal2 == "+") {
                   this.setState({
                     result: Number(this.state.primeiroValor) - Number(this.state.segundoValor) + Number(this.state.terceiroValor),
                     sinaldeigual: '=',
-                    random:  Math.floor(Math.random()*21)
+                    random:  Math.floor(Math.random()*31)
                   })
                 } else if (this.state.sinal == "-" && this.state.sinal2 == "x") {
                   this.setState({
                     result: Number(this.state.primeiroValor) - Number(this.state.segundoValor) * Number(this.state.terceiroValor),
                     sinaldeigual: '=',
-                    random:  Math.floor(Math.random()*21)
+                    random:  Math.floor(Math.random()*31)
                   })
                 } else if (this.state.sinal == "-" && this.state.sinal2 == "÷") {
                   this.setState({
                     result: Number(this.state.primeiroValor) - Number(this.state.segundoValor) / Number(this.state.terceiroValor),
                     sinaldeigual: '=',
-                    random:  Math.floor(Math.random()*21)
+                    random:  Math.floor(Math.random()*31)
                   })
                 } else if (this.state.sinal == "x" && this.state.sinal2 == "") {
                   this.setState({
                     result: Number(this.state.primeiroValor) * Number(this.state.segundoValor),
                     sinaldeigual: '=',
-                    random:  Math.floor(Math.random()*21)
+                    random:  Math.floor(Math.random()*31)
                   })
                 } else if (this.state.sinal == "x" && this.state.sinal2 == "x") {
                   this.setState({
                     result: Number(this.state.primeiroValor) * Number(this.state.segundoValor) * Number(this.state.terceiroValor),
                     sinaldeigual: '=',
-                    random:  Math.floor(Math.random()*21)
+                    random:  Math.floor(Math.random()*31)
                   })
                 } else if (this.state.sinal == "x" && this.state.sinal2 == "+") {
                   this.setState({
                     result: Number(this.state.primeiroValor) * Number(this.state.segundoValor) + Number(this.state.terceiroValor),
                     sinaldeigual: '=',
-                    random:  Math.floor(Math.random()*21)
+                    random:  Math.floor(Math.random()*31)
                   })
                 } else if (this.state.sinal == "x" && this.state.sinal2 == "-") {
                   this.setState({
                     result: Number(this.state.primeiroValor) * Number(this.state.segundoValor) - Number(this.state.terceiroValor),
                     sinaldeigual: '=',
-                    random:  Math.floor(Math.random()*21)
+                    random:  Math.floor(Math.random()*31)
                   })
                 } else if (this.state.sinal == "x" && this.state.sinal2 == "÷") {
                   this.setState({
                     result: Number(this.state.primeiroValor) * Number(this.state.segundoValor) / Number(this.state.terceiroValor),
                     sinaldeigual: '=',
-                    random:  Math.floor(Math.random()*21)
+                    random:  Math.floor(Math.random()*31)
                   })
                 } else if (this.state.sinal == "÷" && this.state.sinal2 == "") {
                   this.setState({
                     result: Number(this.state.primeiroValor) / Number(this.state.segundoValor),
                     sinaldeigual: '=',
-                    random:  Math.floor(Math.random()*21)
+                    random:  Math.floor(Math.random()*31)
                   })
                 } else if (this.state.sinal == "÷" && this.state.sinal2 == "÷") {
                   this.setState({
                     result: Number(this.state.primeiroValor) / Number(this.state.segundoValor) / Number(this.state.terceiroValor),
                     sinaldeigual: '=',
-                    random:  Math.floor(Math.random()*21)
+                    random:  Math.floor(Math.random()*31)
                   })
                 } else if (this.state.sinal == "÷" && this.state.sinal2 == "+") {
                   this.setState({
                     result: Number(this.state.primeiroValor) / Number(this.state.segundoValor) + Number(this.state.terceiroValor),
                     sinaldeigual: '=',
-                    random:  Math.floor(Math.random()*21)
+                    random:  Math.floor(Math.random()*31)
                   })
                 } else if (this.state.sinal == "÷" && this.state.sinal2 == "-") {
                   this.setState({
                     result: Number(this.state.primeiroValor) / Number(this.state.segundoValor) - Number(this.state.terceiroValor),
                     sinaldeigual: '=',
-                    random:  Math.floor(Math.random()*21)
+                    random:  Math.floor(Math.random()*31)
                   })
                 } else if (this.state.sinal == "÷" && this.state.sinal2 == "x") {
                   this.setState({
                     result: Number(this.state.primeiroValor) / Number(this.state.segundoValor) * Number(this.state.terceiroValor),
                     sinaldeigual: '=',
-                    random:  Math.floor(Math.random()*21)
+                    random:  Math.floor(Math.random()*31)
                   })
                 }
               }}>=</Numbers>
