@@ -1,0 +1,17 @@
+@font-face {
+  font-family:"Calc" ;
+  src: url('Calculator.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Calc", sans-serif;
+}
+p{
+  font-size: 40px;
+}
